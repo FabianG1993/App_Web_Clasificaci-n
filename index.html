@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sistema de Clasificación de Imágenes</title>
+  <link rel="stylesheet" type="text/css" href="static/styles.css">
+</head>
+<body>
+  <h1 class="centered-title">Sistema de Clasificación de Imágenes</h1>
+  <form action="/predict" method="post" enctype="multipart/form-data">
+  <label for="image">Subir Imagen:</label>
+  <input type="file" name="image" id="image"><br><br>
+  <input type="submit" value="Clasificar", class="centered-button">
+  </form>
+
+  <p id="prediction_result" class="prediction-text">{{ prediction_result }}</p>
+</body>
+</html>
+
